@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/u/0/uc?export=download&confirm=xcUV&id=1-15iPBvdWUl2f-1n5MkBPNoP88cYM9Xf'
+export_file_url = 'https://www.dropbox.com/s/ouwksexrz6pgo8z/tr1-5againmodel.pkl?dl=1'
 export_file_name = 'tr1-5againmodel.pkl'
 
 classes = ['100', '200', '50','500']
