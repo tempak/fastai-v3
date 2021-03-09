@@ -10,7 +10,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 export_file_url = 'https://drive.google.com/uc?export=download&id=16xcacjJ6AsMTCl1IquLKP8rtHrp-GPPc'
-export_file_name = 'tr1-5model.pkl'
+export_file_name = 'tr1-5againmodel.pkl'
 
 classes = ['100', '200', '50','500']
 path = Path(__file__).parent
