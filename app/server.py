@@ -62,8 +62,7 @@ async def analyze(request):
     img = open_image(BytesIO(img_bytes))
     pred = learn.predict(img)
     probabilities=[ '%.2f' % float(100*elem) for elem in pred[2] ]
-    print(probabilities)
-    return JSONResponse({'result': str(pred[0])})
+    return JSONResponse({'result': str(pred[0]),'probability':str(max(probabilities))})
 
 
 if __name__ == '__main__':
