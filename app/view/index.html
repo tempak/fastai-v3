@@ -7,10 +7,12 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Bear Images 🐻</div>
+    <div class='title'>Predict denomination of <strong>INR</strong> notes</div>
     <p>
-      Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
-      all three!
+      Use images of <strong>INR</strong>
+    </p>
+    <p>
+      For test use by students of <strong>R.V College of Engineering</strong>, <strong>not for production use!</strong>
     </p>
     <div class='content'>
       <div class='no-display'>
@@ -19,9 +21,11 @@
                type='file'
                name='file'
                accept='image/*'
+               //capture = 'environment'    # for front camera 
+               capture='user' //opens webcam if available with prompt, in browsers which enable access to webcam 
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select a valid image</button>
       <div class='upload-label'>
         <label id='upload-label'>No file chosen</label>
       </div>
